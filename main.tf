@@ -10,6 +10,6 @@ terraform {
 
 resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo Hello from Terraform in GitHub Actions!"
+    command = " echo changed from branch2 test - Hello from Terraform in GitHub Actions!"
   }
 }

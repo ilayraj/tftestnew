@@ -1,5 +1,3 @@
-# main.tf - Simple Terraform configuration to test GitHub Actions
-
 terraform {
   required_providers {
     null = {
@@ -10,8 +8,8 @@ terraform {
   required_version = ">= 0.12"
 }
 
-resource "null_resource" "test" {
+resource "null_resource" "example" {
   provisioner "local-exec" {
-    command = "echo Hello, GitHub Actions!"
+    command = "echo Hello from Terraform in GitHub Actions!"
   }
 }
